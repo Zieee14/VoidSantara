@@ -1,44 +1,342 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Website Panji</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoidSantara</title>
 
-    <style>
-        body {
-            background-color: lightblue;
-            font-family: Arial;
-            text-align: center;
-            margin-top: 100px;
-        }
+<style>
 
-        h1 {
-            color: darkblue;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
 
-        button {
-            background-color: green;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 10px;
-            font-size: 20px;
-            cursor: pointer;
-        }
+body{
 
-        button:hover {
-            background-color: darkgreen;
-        }
-    </style>
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url("background.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+color:white;
+
+}
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 50px;
+
+background:rgba(0,0,0,.5);
+
+backdrop-filter:blur(10px);
+
+position:sticky;
+top:0;
+
+}
+
+nav h2{
+
+color:#00ff99;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+
+}
+
+nav a:hover{
+
+color:#00ff99;
+
+}
+
+.hero{
+
+height:90vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.logo{
+
+width:180px;
+height:180px;
+
+border-radius:50%;
+
+border:5px solid #00ff99;
+
+box-shadow:0 0 30px #00ff99;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:65px;
+
+color:#00ff99;
+
+text-shadow:0 0 20px #00ff99;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+margin-top:15px;
+
+color:#ddd;
+
+}
+
+button{
+
+padding:15px 35px;
+
+margin-top:35px;
+margin-left:10px;
+margin-right:10px;
+
+border:none;
+
+border-radius:10px;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.join{
+
+background:#00c853;
+color:white;
+
+}
+
+.join:hover{
+
+transform:scale(1.08);
+
+background:#00e676;
+
+}
+
+.discord{
+
+background:#5865F2;
+color:white;
+
+}
+
+.discord:hover{
+
+transform:scale(1.08);
+
+}
+
+.card{
+
+width:80%;
+max-width:1000px;
+
+margin:auto;
+
+margin-bottom:40px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(10px);
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 0 15px rgba(0,255,150,.2);
+
+}
+
+.card h2{
+
+margin-bottom:20px;
+
+color:#00ff99;
+
+}
+
+.feature{
+
+padding:12px;
+
+font-size:20px;
+
+}
+
+.status{
+
+font-size:30px;
+
+color:lime;
+
+font-weight:bold;
+
+}
+
+footer{
+
+padding:30px;
+
+text-align:center;
+
+background:#111;
+
+margin-top:40px;
+
+color:gray;
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-    <h1>Halo! 👋</h1>
+<nav>
 
-    <p>Coba pencet tombol di bawah 😏</p>
+<h2>🌌 VoidSantara</h2>
 
-    <button onclick="window.location.href='halaman2.html'">
-        Pencet Aku
-    </button>
+<div>
+
+<a href="#">Home</a>
+
+<a href="#">Rules</a>
+
+<a href="#">Store</a>
+
+<a href="#">Staff</a>
+
+<a href="#">Discord</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<img src="logo.png" class="logo">
+
+<h1>VoidSantara</h1>
+
+<p>Lifesteal × Economy Minecraft Server</p>
+
+<button class="join"
+onclick="window.location.href='halaman2.html'">
+
+🎮 Play Now
+
+</button>
+
+<button class="discord"
+onclick="window.open('https://discord.gg/ISI_LINK_DISCORD')">
+
+💬 Discord
+
+</button>
+
+</section>
+
+<div class="card">
+
+<h2>📊 Server Status</h2>
+
+<div class="status">
+
+🟢 ONLINE
+
+</div>
+
+<br>
+
+<p>
+
+IP SERVER
+
+</p>
+
+<h3>
+
+play.voidsantara.my.id
+
+</h3>
+
+</div>
+
+<div class="card">
+
+<h2>✨ Features</h2>
+
+<div class="feature">⚔️ Lifesteal</div>
+
+<div class="feature">💰 Economy</div>
+
+<div class="feature">🎁 Daily Rewards</div>
+
+<div class="feature">🏆 Leaderboard</div>
+
+<div class="feature">🛒 Shop</div>
+
+<div class="feature">👑 Friendly Staff</div>
+
+</div>
+
+<div class="card">
+
+<h2>📜 Rules</h2>
+
+<p>✔ Jangan Cheat</p>
+
+<p>✔ Hormati Semua Player</p>
+
+<p>✔ Jangan Toxic Berlebihan</p>
+
+<p>✔ Nikmati Permainan!</p>
+
+</div>
+
+<footer>
+
+© 2026 VoidSantara Network
+
+</footer>
 
 </body>
+
 </html>
